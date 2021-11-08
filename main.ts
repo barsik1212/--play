@@ -11,3 +11,10 @@ input.onButtonPressed(Button.A, function () {
 let count = 0
 count = 0
 basic.showNumber(count)
+basic.forever(function () {
+    if (count > 3) {
+        music.startMelody(music.builtInMelody(Melodies.Chase), MelodyOptions.Once)
+        basic.pause(5000)
+        control.reset()
+    }
+})
