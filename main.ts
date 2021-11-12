@@ -14,7 +14,7 @@ basic.showNumber(count)
 basic.forever(function () {
     if (count > 3) {
         music.startMelody(music.builtInMelody(Melodies.Chase), MelodyOptions.Once)
-        basic.pause(5000)
+        basic.pause(9000)
         control.reset()
     }
 })
